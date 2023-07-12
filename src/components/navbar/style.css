@@ -1,0 +1,137 @@
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 2.5rem;
+}
+
+.actions {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    transition: all ease 0.2s;
+}
+
+.links li {
+    position: relative;
+    transition: all ease 0.2s;
+}
+
+.links li::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background-color: #0F7AD3;
+    bottom: -10%;
+    left: 0;
+}
+
+.links li:hover ::after {
+    width: 100%;
+}
+
+.links li a {
+    transition: all ease 0.2s;
+}
+
+.links li a:hover {
+    color: #0F7AD3;
+}
+
+.black {
+    color: #111;
+}
+
+.nav-button {
+    border: 2px solid #0F7AD3;
+    background-color: transparent;
+    padding: 0.5rem 0.8rem;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #0F7AD3;
+}
+
+.nav-button:hover {
+    background-color: #0F7AD3;
+    color: #fff;
+}
+
+@media only screen and (max-width: 880px) {
+    .nav-button {
+        display: none;
+    }
+    .links {
+        position: absolute;
+        left: 0;
+        top: -1000%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+        background-color: #0F7AD3;
+        color: #fff;
+        padding: 1rem;
+        z-index: 98999;
+        backdrop-filter: blur(10px);
+    }
+    .links li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .links li a {
+        display: block;
+        color: #fff;
+        width: 100%;
+    }
+    .links li:hover {
+        background-color: #fff;
+    }
+    .links li:hover a {
+        color: #0F7AD3;
+    }
+    .links.slide {
+        top: 87%;
+    }
+    .actions {
+        display: block;
+    }
+    .menu {
+        display: block;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
