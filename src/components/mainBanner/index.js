@@ -1,11 +1,15 @@
 import React from "react";
 import "./style.css";
-import BallsImage from "../../assets/balls.png";
+import IMAGES from "../../mockData";
 const Banner = ({ children }) => {
   return (
     <div class="img-banner">
       {children}
-      <img src={BallsImage} alt="background pic of balls" class="balls-img" />
+      <img
+        src={IMAGES.ballsImg}
+        alt="background pic of balls"
+        class="balls-img"
+      />
     </div>
   );
 };

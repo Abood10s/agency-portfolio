@@ -18,28 +18,11 @@ import Widget from "../../components/company-widget";
 import Accordion from "../../components/accordion";
 import EduCard from "../../components/education-card";
 import CustomerCard from "../../components/customer-card";
+import ProjectsCard from "../../components/projects-card";
+import StrategyCard from "../../components/strategy-card";
 
 //  images
-import firstImage from "../../assets/1.jpg";
-import secondImage from "../../assets/2.png";
-import thirdImage from "../../assets/3.png";
-import fourthImage from "../../assets/4.png";
-import ProjectsCard from "../../components/projects-card";
-import firProjectImg from "../../assets/1.svg";
-import secProjectImg from "../../assets/2.svg";
-import thirstProjectImg from "../../assets/3.svg";
-import fourtProjectImg from "../../assets/4.svg";
-import StrategyCard from "../../components/strategy-card";
-import widgetimg1 from "../../assets/widget1.png";
-import widgetimg2 from "../../assets/widget2.png";
-import widgetimg3 from "../../assets/widget3.png";
-import man1 from "../../assets/man1.png";
-import woman from "../../assets/woman.png";
-import man3 from "../../assets/man3.png";
-import edu1 from "../../assets/edu1.png";
-import edu2 from "../../assets/edu2.png";
-import edu3 from "../../assets/edu3.png";
-import edu4 from "../../assets/edu4.png";
+import IMAGES from "../../mockData";
 
 const HomePage = () => {
   return (
@@ -52,14 +35,17 @@ const HomePage = () => {
         }
       />
 
-      <div class="services-cards">
-        <ServicesCard image={firstImage} title={"Digital Marketing"} />
+      <div className="services-cards">
+        <ServicesCard image={IMAGES.firstImage} title={"Digital Marketing"} />
         <ServicesCard
-          image={secondImage}
+          image={IMAGES.secondImage}
           title={"Website Development & Design"}
         />
-        <ServicesCard image={thirdImage} title={"Software"} />
-        <ServicesCard image={fourthImage} title={"Graphic Design & Branding"} />
+        <ServicesCard image={IMAGES.thirdImage} title={"Software"} />
+        <ServicesCard
+          image={IMAGES.fourthImage}
+          title={"Graphic Design & Branding"}
+        />
       </div>
       <Heading title={"Our projects"} body={"you can see our projects"} />
       <div className="projects-nav">
@@ -80,16 +66,25 @@ const HomePage = () => {
           effect="fade"
         >
           <SwiperSlide>
-            <ProjectsCard tag={"UI/UX"} image={firProjectImg} />
+            <ProjectsCard tag={"UI/UX"} image={IMAGES.firProjectImg} />
           </SwiperSlide>
           <SwiperSlide>
-            <ProjectsCard tag={"Digital Marketing"} image={secProjectImg} />
+            <ProjectsCard
+              tag={"Digital Marketing"}
+              image={IMAGES.secProjectImg}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <ProjectsCard tag={"Digital Marketing"} image={thirstProjectImg} />
+            <ProjectsCard
+              tag={"Digital Marketing"}
+              image={IMAGES.thirstProjectImg}
+            />
           </SwiperSlide>
           <SwiperSlide>
-            <ProjectsCard tag={"Digital Marketing"} image={fourtProjectImg} />
+            <ProjectsCard
+              tag={"Digital Marketing"}
+              image={IMAGES.fourtProjectImg}
+            />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -111,9 +106,17 @@ const HomePage = () => {
           }
         />
         <div className="widgets">
-          <Widget number="1000+" desc="Completed projects" image={widgetimg1} />
-          <Widget number="50k+" desc="Happy Customers" image={widgetimg2} />
-          <Widget number="20+" desc="awards won" image={widgetimg3} />
+          <Widget
+            number="1000+"
+            desc="Completed projects"
+            image={IMAGES.widgetimg1}
+          />
+          <Widget
+            number="50k+"
+            desc="Happy Customers"
+            image={IMAGES.widgetimg2}
+          />
+          <Widget number="20+" desc="awards won" image={IMAGES.widgetimg3} />
         </div>
       </div>
       <Heading
@@ -131,19 +134,19 @@ const HomePage = () => {
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
         >
           <SwiperSlide>
-            <CustomerCard image={man1} />
+            <CustomerCard image={IMAGES.man1} />
           </SwiperSlide>
           <SwiperSlide>
-            <CustomerCard image={woman} />
+            <CustomerCard image={IMAGES.woman} />
           </SwiperSlide>
           <SwiperSlide>
-            <CustomerCard image={man3} />
+            <CustomerCard image={IMAGES.man3} />
           </SwiperSlide>
           <SwiperSlide>
-            <CustomerCard image={woman} />
+            <CustomerCard image={IMAGES.woman} />
           </SwiperSlide>
           <SwiperSlide>
-            <CustomerCard image={man1} />
+            <CustomerCard image={IMAGES.man1} />
           </SwiperSlide>
         </Swiper>
       </div>
@@ -177,19 +180,19 @@ const HomePage = () => {
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
         >
           <SwiperSlide>
-            <EduCard image={edu1} />
+            <EduCard image={IMAGES.edu1} />
           </SwiperSlide>
           <SwiperSlide>
-            <EduCard image={edu2} />
+            <EduCard image={IMAGES.edu2} />
           </SwiperSlide>
           <SwiperSlide>
-            <EduCard image={edu3} />
+            <EduCard image={IMAGES.edu3} />
           </SwiperSlide>
           <SwiperSlide>
-            <EduCard image={edu4} />
+            <EduCard image={IMAGES.edu4} />
           </SwiperSlide>
           <SwiperSlide>
-            <EduCard image={edu2} />
+            <EduCard image={IMAGES.edu2} />
           </SwiperSlide>
         </Swiper>
       </div>

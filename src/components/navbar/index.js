@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 
 import { PATHS } from "../../routes";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import Logo from "../../assets/logo.png";
 
@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <NavLink to="/">
+        <Link to="/">
           <img src={Logo} alt="logo" />
-        </NavLink>
+        </Link>
       </div>
       <div className="placeholder">
         <ul className={`links ${show ? "slide" : ""}`}>

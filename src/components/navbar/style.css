@@ -44,22 +44,13 @@ a {
     align-items: center;
     gap: 1rem;
     font-weight: bold;
-    transition: all ease 0.2s;
+    transition: all 0.4s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
 
 .links li {
     position: relative;
     transition: all ease 0.2s;
-}
-
-.links li::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 0px;
-    background-color: #0F7AD3;
-    bottom: -10%;
-    left: 0;
 }
 
 .links li:hover ::after {
@@ -68,6 +59,7 @@ a {
 
 .links li a {
     transition: all ease 0.2s;
+    padding: 0.5rem 0.7rem;
 }
 
 .links li a:hover {
