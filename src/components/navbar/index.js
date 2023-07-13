@@ -1,29 +1,76 @@
 import React, { useState } from "react";
 import "./style.css";
+
+import { PATHS } from "../../routes";
+import { NavLink } from "react-router-dom";
+
 import Logo from "../../assets/logo.png";
+
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={Logo} alt="logo" />
+        <NavLink to="/">
+          <img src={Logo} alt="logo" />
+        </NavLink>
       </div>
       <div className="placeholder">
         <ul className={`links ${show ? "slide" : ""}`}>
           <li>
-            <a href="../home/index.html">Home</a>
+            <NavLink
+              to={PATHS.HOME}
+              style={({ isActive }) => ({
+                color: isActive ? "#fff" : "",
+                background: isActive ? "#0F7AD3" : "",
+              })}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <a href="../About/about.html">About</a>
+            <NavLink
+              to={PATHS.ABOUT}
+              style={({ isActive }) => ({
+                color: isActive ? "#fff" : "",
+                background: isActive ? "#0F7AD3" : "",
+              })}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <a href="../services/services.html">Services</a>
+            <NavLink
+              to={PATHS.SERVICES}
+              style={({ isActive }) => ({
+                color: isActive ? "#fff" : "",
+                background: isActive ? "#0F7AD3" : "",
+              })}
+            >
+              Services
+            </NavLink>
           </li>
           <li>
-            <a href="../latestnews/latest.html">Latest News</a>
+            <NavLink
+              to={PATHS.LATEST_NEWS}
+              style={({ isActive }) => ({
+                color: isActive ? "#fff" : "",
+                background: isActive ? "#0F7AD3" : "",
+              })}
+            >
+              Latest News
+            </NavLink>
           </li>
           <li>
-            <a href="../contactus/contact.html">Contact Us</a>
+            <NavLink
+              to={PATHS.CONTACT_US}
+              style={({ isActive }) => ({
+                color: isActive ? "#fff" : "",
+                background: isActive ? "#0F7AD3" : "",
+              })}
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
 

@@ -1,0 +1,10 @@
+.heading {
+    margin: 3.5rem auto;
+    text-align: center;
+}
+
+.heading>h2 {
+    color: var(--dark-blue);
+    font-size: var(--large-font);
+    font-weight: bold;
+}

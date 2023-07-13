@@ -1,0 +1,31 @@
+.edu-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.064);
+    margin: 2.5rem 0;
+    padding: 0.5rem;
+    border-radius: var(--radius);
+}
+
+.edu-card p {
+    font-weight: bold;
+}
+
+.edu-card span {
+    columns: var(--light-grey);
+    font-size: var(--small-font);
+}
+
+.edu-img {
+    display: block;
+    border-radius: var(--radius);
+    max-height: 280px;
+    width: 90%;
+    margin: 0.2rem auto;
+    object-fit: cover;
+}
+
+
+/* @media only screen and (max-width: 900px) {
+    .edu-card {
+        width: 85%;
+    }
+} */

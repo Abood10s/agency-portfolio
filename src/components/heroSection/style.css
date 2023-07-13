@@ -1,0 +1,51 @@
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 2rem;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.hero-img {
+    display: block;
+    height: 65vh;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 45%;
+}
+
+.get-started-btn:hover {
+    color: var(--dark-blue);
+    background-color: var(--white);
+    border: 1px solid var(--dark-blue);
+    cursor: pointer;
+}
+
+.hero-heading {
+    font-size: var(--large-font);
+}
+
+.red-txt {
+    color: #FF6262;
+    margin: 0 0.4rem 0 0.1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .hero-img {
+        width: 80%;
+        margin: 2rem auto;
+        height: auto;
+    }
+    .desc {
+        width: 80%;
+    }
+    .get-started-btn {
+        align-self: flex-end;
+        white-space: nowrap;
+    }
+}

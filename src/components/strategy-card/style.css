@@ -1,0 +1,47 @@
+.strategy-card {
+    box-shadow: 1px 1px 25px var(--shadow);
+    justify-self: self-start;
+    padding: 1.2rem;
+    border-radius: var(--radius);
+    height: fit-content;
+}
+
+.strategy-card:nth-of-type(even) {
+    margin-top: 2.5rem;
+}
+
+.num {
+    text-align: center;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.num1 {
+    background-color: #E5F4FD;
+    color: var(--dark-blue);
+}
+
+.num2 {
+    background-color: #FFF4EC;
+    color: #F79D56;
+}
+
+.num3 {
+    background-color: #EDFDFF;
+    color: #43CEA2;
+}
+
+.num4 {
+    background-color: #EEEEEE;
+    color: #9C9493;
+}
+
+.ideas {
+    border-bottom: 2px solid var(--dark-blue);
+    width: fit-content;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}

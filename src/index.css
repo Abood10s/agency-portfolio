@@ -1,3 +1,18 @@
+:root {
+    --shadow: #6a6a6a1b;
+    --dark-blue: #0F7AD3;
+    --light-blue: #4A3AFF;
+    --light-green: #62C2C2;
+    --light-grey: #F7F7F7;
+    --soft-grey: #FAFAFA;
+    --soft-blue: #FBFBFF;
+    --white: #fff;
+    --large-font: 28px;
+    --medium-font: 16px;
+    --small-font: 14px;
+    --radius: 7px;
+}
+
 * {
     margin: 0;
     padding: 0;

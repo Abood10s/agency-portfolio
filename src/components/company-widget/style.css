@@ -1,0 +1,13 @@
+.widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.widgets .number,
+.widget-cards .number {
+    font-weight: bold;
+    font-size: var(--large-font);
+    text-align: center;
+}

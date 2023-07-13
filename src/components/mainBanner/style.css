@@ -1,0 +1,16 @@
+.img-banner {
+    height: 30vh;
+    background-image: url("../../assets/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.balls-img {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    height: 12vh;
+    z-index: -1;
+}

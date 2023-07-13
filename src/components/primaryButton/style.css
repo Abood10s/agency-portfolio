@@ -1,0 +1,17 @@
+.get-started-btn {
+    padding: 0.7rem 1.2rem;
+    display: block;
+    width: fit-content;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background-color: #fff;
+    color: #0F7AD3;
+    border: 1px solid #0F7AD3;
+}

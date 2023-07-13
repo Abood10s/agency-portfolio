@@ -1,0 +1,35 @@
+.accordion {
+    background-color: #fff;
+    padding: 1.7rem 1rem;
+    border-radius: var(--radius);
+    transition: all 0.2s ease;
+}
+
+.accordion .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.showAcc {
+    margin: 0.7rem 0;
+    padding: 0.3rem 0.4rem;
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+
+.showAcc:hover {
+    background-color: #6F6C90;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.active {
+    background-color: var(--dark-blue);
+    color: #fff;
+}

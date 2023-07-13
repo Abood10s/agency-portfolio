@@ -1,7 +1,14 @@
 import React from "react";
-
-const index = () => {
-  return <div>index</div>;
+import "./style.css";
+const PrimaryButton = ({ title = "Get Started", bg, clr }) => {
+  return (
+    <button
+      style={{ backgroundColor: bg, color: clr }}
+      className="get-started-btn"
+    >
+      {title}
+    </button>
+  );
 };
 
-export default index;
+export default PrimaryButton;
