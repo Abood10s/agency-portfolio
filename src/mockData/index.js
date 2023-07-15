@@ -1,4 +1,6 @@
 const IMAGES = {
+  heroImage: require("../assets/herosection.jpg"),
+  aboutImage: require("../assets/about-illustration.png"),
   ballsImg: require("../assets/balls.png"),
   firstImage: require("../assets/1.jpg"),
   secondImage: require("../assets/2.png"),
@@ -14,6 +16,10 @@ const IMAGES = {
   man1: require("../assets/man1.png"),
   woman: require("../assets/woman.png"),
   man3: require("../assets/man3.png"),
+  m1: require("../assets/m1.png"),
+  w1: require("../assets/w1.png"),
+  w2: require("../assets/w2.png"),
+  m2: require("../assets/m2.png"),
   edu1: require("../assets/edu1.png"),
   edu2: require("../assets/edu2.png"),
   edu3: require("../assets/edu3.png"),
@@ -23,27 +29,27 @@ export default IMAGES;
 
 const projectsData = [
   {
-    tag: "UI/UX",
+    role: "UI/UX",
     image: IMAGES.firProjectImg,
   },
   {
-    tag: "Digital Marketing",
+    role: "Digital Marketing",
     image: IMAGES.secProjectImg,
   },
   {
-    tag: "Digital Marketing",
+    role: "Digital Marketing",
     image: IMAGES.thirstProjectImg,
   },
   {
-    tag: "Digital Marketing",
+    role: "Digital Marketing",
     image: IMAGES.fourtProjectImg,
   },
   {
-    tag: "UI/UX",
+    role: "UI/UX",
     image: IMAGES.firProjectImg,
   },
   {
-    tag: "Digital Marketing",
+    role: "Digital Marketing",
     image: IMAGES.secProjectImg,
   },
 ];
@@ -61,4 +67,12 @@ const educationData = [
   { image: IMAGES.edu4 },
   { image: IMAGES.edu2 },
 ];
-export { projectsData, customersData, educationData };
+const teamData = [
+  { image: IMAGES.m1, role: "React Js" },
+  { image: IMAGES.w1, role: "UI/UX Designer " },
+  { image: IMAGES.w2, role: "Back End Developer" },
+  { image: IMAGES.m2, role: "React Js" },
+  { image: IMAGES.m1, role: "UI/UX Designer " },
+  { image: IMAGES.w1, role: "Back End Developer" },
+];
+export { projectsData, customersData, educationData, teamData };

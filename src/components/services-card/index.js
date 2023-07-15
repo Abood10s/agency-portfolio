@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-const ServicesCard = ({ image, title }) => {
+const ServicesCard = ({ image, title, className }) => {
   return (
-    <div className="services-card">
-      <img className="services-img lihoto-cover" src={image} alt="marketing" />
+    <div className={`services-card ${className}`}>
+      <img className="services-img photo-cover" src={image} alt="marketing" />
       <h4>{title}</h4>
 
       <ul className="card-tags">

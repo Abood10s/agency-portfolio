@@ -1,7 +1,7 @@
 import HomePage from "../pages/home";
 import AboutPage from "../pages/about";
 import ServicesPage from "../pages/services";
-import LatestPage from "../pages/latestenws";
+import LatestPage from "../pages/latestnews";
 import ContactPage from "../pages/contact";
 
 export const PATHS = {

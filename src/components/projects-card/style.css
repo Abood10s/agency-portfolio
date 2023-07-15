@@ -4,12 +4,13 @@
     gap: 0.5rem;
     border-radius: var(--radius);
     overflow: hidden;
-    padding: 0.5rem;
+    padding: 0.1rem 0.5rem;
     object-fit: cover;
     max-width: 80%;
     margin: 1.5rem auto;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
 
 .projects-img {

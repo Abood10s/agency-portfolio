@@ -20,6 +20,7 @@ import EduCard from "../../components/education-card";
 import CustomerCard from "../../components/customer-card";
 import ProjectsCard from "../../components/projects-card";
 import StrategyCard from "../../components/strategy-card";
+import PrimaryButton from "../../components/primaryButton";
 
 //  images And Mock Data
 import IMAGES, {
@@ -29,7 +30,7 @@ import IMAGES, {
 } from "../../mockData";
 
 //  Swipers Break points
-const breakpoints = {
+export const breakpoints = {
   640: {
     width: 640,
     slidesPerView: 1,
@@ -52,7 +53,13 @@ const HomePage = () => {
   const Accordions = Array.from({ length: 5 });
   return (
     <div>
-      <HeroSection />
+      <HeroSection image={IMAGES.heroImage}>
+        <PrimaryButton
+          bg={"#4A3AFF"}
+          clr={"#fff"}
+          classNameName="get-started-btn"
+        />
+      </HeroSection>
       <Heading
         title={"Our services"}
         body={
@@ -83,7 +90,7 @@ const HomePage = () => {
         <Swiper
           className="swiper"
           breakpoints={breakpoints}
-          style={{ padding: "0 1rem" }}
+          style={{ padding: " 1rem" }}
           spaceBetween={10}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
@@ -91,7 +98,7 @@ const HomePage = () => {
         >
           {projectsData.map((slide, index) => (
             <SwiperSlide key={index}>
-              <ProjectsCard tag={slide.tag} image={slide.image} />
+              <ProjectsCard tag={slide.role} image={slide.image} />
             </SwiperSlide>
           ))}
         </Swiper>

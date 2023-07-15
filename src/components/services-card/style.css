@@ -20,6 +20,7 @@
     max-height: 220px;
     background-color: var(--soft-grey);
     object-fit: contain;
+    background-blend-mode: screen;
 }
 
 .tag::before {

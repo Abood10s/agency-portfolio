@@ -1,13 +1,12 @@
 import React from "react";
 import "./style.css";
 
-import HeroImage from "../../assets/herosection.jpg";
-
-import PrimaryButton from "../primaryButton/index";
-
-const HeroSection = () => {
+const HeroSection = ({ children, image, reverse = false }) => {
   return (
-    <div className="hero-section">
+    <div
+      className="hero-section"
+      style={{ flexDirection: reverse ? "row-reverse" : "row" }}
+    >
       <div className="desc">
         <h2 className="hero-heading">
           Secure <span className="red-txt">IT Solutions</span>for a more secure
@@ -18,18 +17,10 @@ const HeroSection = () => {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <PrimaryButton
-          bg={"#4A3AFF"}
-          clr={"#fff"}
-          classNameName="get-started-btn"
-        />
+        {children}
       </div>
       <div className="img">
-        <img
-          src={HeroImage}
-          alt="hero section illustration"
-          className="hero-img"
-        />
+        <img src={image} alt="hero section illustration" className="hero-img" />
       </div>
     </div>
   );
