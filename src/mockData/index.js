@@ -20,3 +20,45 @@ const IMAGES = {
   edu4: require("../assets/edu4.png"),
 };
 export default IMAGES;
+
+const projectsData = [
+  {
+    tag: "UI/UX",
+    image: IMAGES.firProjectImg,
+  },
+  {
+    tag: "Digital Marketing",
+    image: IMAGES.secProjectImg,
+  },
+  {
+    tag: "Digital Marketing",
+    image: IMAGES.thirstProjectImg,
+  },
+  {
+    tag: "Digital Marketing",
+    image: IMAGES.fourtProjectImg,
+  },
+  {
+    tag: "UI/UX",
+    image: IMAGES.firProjectImg,
+  },
+  {
+    tag: "Digital Marketing",
+    image: IMAGES.secProjectImg,
+  },
+];
+const customersData = [
+  { image: IMAGES.man1 },
+  { image: IMAGES.woman },
+  { image: IMAGES.man3 },
+  { image: IMAGES.woman },
+  { image: IMAGES.man1 },
+];
+const educationData = [
+  { image: IMAGES.edu1 },
+  { image: IMAGES.edu2 },
+  { image: IMAGES.edu3 },
+  { image: IMAGES.edu4 },
+  { image: IMAGES.edu2 },
+];
+export { projectsData, customersData, educationData };

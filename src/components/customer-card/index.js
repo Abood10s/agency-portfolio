@@ -11,8 +11,7 @@ const CustomerCard = ({ image }) => {
       <img src={image} alt="person" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam
+        tempor incididunt ut labore.
       </p>
       <div className="star-cont">
         {elements.map((element) => (

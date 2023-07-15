@@ -21,10 +21,35 @@ import CustomerCard from "../../components/customer-card";
 import ProjectsCard from "../../components/projects-card";
 import StrategyCard from "../../components/strategy-card";
 
-//  images
-import IMAGES from "../../mockData";
+//  images And Mock Data
+import IMAGES, {
+  customersData,
+  educationData,
+  projectsData,
+} from "../../mockData";
+
+//  Swipers Break points
+const breakpoints = {
+  640: {
+    width: 640,
+    slidesPerView: 1,
+  },
+  768: {
+    width: 768,
+    slidesPerView: 2,
+  },
+  1000: {
+    width: 1000,
+    slidesPerView: 3,
+  },
+  2000: {
+    width: 2000,
+    slidesPerView: 4,
+  },
+};
 
 const HomePage = () => {
+  const Accordions = Array.from({ length: 5 });
   return (
     <div>
       <HeroSection />
@@ -56,36 +81,19 @@ const HomePage = () => {
       </div>
       <div className="swiper-cont">
         <Swiper
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            500: { slidesPerView: 1 },
-          }}
+          className="swiper"
+          breakpoints={breakpoints}
+          style={{ padding: "0 1rem" }}
           spaceBetween={10}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
           effect="fade"
         >
-          <SwiperSlide>
-            <ProjectsCard tag={"UI/UX"} image={IMAGES.firProjectImg} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProjectsCard
-              tag={"Digital Marketing"}
-              image={IMAGES.secProjectImg}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProjectsCard
-              tag={"Digital Marketing"}
-              image={IMAGES.thirstProjectImg}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ProjectsCard
-              tag={"Digital Marketing"}
-              image={IMAGES.fourtProjectImg}
-            />
-          </SwiperSlide>
+          {projectsData.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <ProjectsCard tag={slide.tag} image={slide.image} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <Heading
@@ -126,28 +134,16 @@ const HomePage = () => {
       <div className="swiper-cont">
         <Swiper
           spaceBetween={10}
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            500: { slidesPerView: 1 },
-          }}
+          style={{ padding: "0 1rem" }}
+          breakpoints={breakpoints}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
         >
-          <SwiperSlide>
-            <CustomerCard image={IMAGES.man1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CustomerCard image={IMAGES.woman} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CustomerCard image={IMAGES.man3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CustomerCard image={IMAGES.woman} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CustomerCard image={IMAGES.man1} />
-          </SwiperSlide>
+          {customersData.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <CustomerCard image={slide.image} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <Heading
@@ -157,11 +153,12 @@ const HomePage = () => {
         }
       />
       <div className="accordions">
-        <Accordion question={"Amet minim mollit non deserunt ullamco"} />
-        <Accordion question={"Amet minim mollit non deserunt ullamco"} />
-        <Accordion question={"Amet minim mollit non deserunt ullamco"} />
-        <Accordion question={"Amet minim mollit non deserunt ullamco"} />
-        <Accordion question={"Amet minim mollit non deserunt ullamco"} />
+        {Accordions.map((_, index) => (
+          <Accordion
+            key={index}
+            question={"Amet minim mollit non deserunt ullamco"}
+          />
+        ))}
       </div>
       <Heading
         title={"This just happened"}
@@ -172,28 +169,16 @@ const HomePage = () => {
       <div className="swiper-cont">
         <Swiper
           spaceBetween={20}
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            500: { slidesPerView: 1 },
-          }}
+          style={{ padding: "0 1rem" }}
+          breakpoints={breakpoints}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination, A11y, EffectCoverflow]}
         >
-          <SwiperSlide>
-            <EduCard image={IMAGES.edu1} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EduCard image={IMAGES.edu2} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EduCard image={IMAGES.edu3} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EduCard image={IMAGES.edu4} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <EduCard image={IMAGES.edu2} />
-          </SwiperSlide>
+          {educationData.map((data, index) => (
+            <SwiperSlide key={index}>
+              <EduCard image={data.image} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

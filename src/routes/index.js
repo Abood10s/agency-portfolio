@@ -18,4 +18,5 @@ export const router = [
   { path: PATHS.SERVICES, element: <ServicesPage /> },
   { path: PATHS.LATEST_NEWS, element: <LatestPage /> },
   { path: PATHS.CONTACT_US, element: <ContactPage /> },
+  { path: "*", element: <h1>Sorry ..!</h1> },
 ];
