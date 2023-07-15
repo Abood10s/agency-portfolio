@@ -15,7 +15,7 @@ const CustomerCard = ({ image }) => {
       </p>
       <div className="star-cont">
         {elements.map((element) => (
-          <img key={element} src={star} />
+          <img key={element} src={star} alt="Star" />
         ))}
       </div>
     </div>
