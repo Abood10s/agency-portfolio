@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import { Link, useParams } from "react-router-dom";
+//  data
 import { latestData } from "../../mockData";
+//  components
 import PrimaryButton from "../../components/primaryButton";
 import Heading from "../../components/heading";
 import ProjectsCard from "../../components/projects-card";
-import { useEffect } from "react";
 
 const SingleBlogPage = () => {
   let { id } = useParams();
@@ -23,7 +24,7 @@ const SingleBlogPage = () => {
             bg={"#0F7AD3"}
             clr={"#fff"}
           />
-          <span className="date">Techrief Oct 20, 2022</span>
+          <span className="date"> Oct 20, 2022</span>
         </div>
         <div className="blog-text">
           <h2>Lorem Ipsum Dolor Sit Amet</h2>
@@ -45,7 +46,7 @@ const SingleBlogPage = () => {
 
       <Heading title="Popular Blogs" />
       <div className="latest-grid">
-        {latestData.map((item, index) => {
+        {latestData.slice(0, 4).map((item, index) => {
           return (
             <Link to={`/blog/${item.id}`} key={index}>
               <ProjectsCard image={item.image} tag={item.role}>
