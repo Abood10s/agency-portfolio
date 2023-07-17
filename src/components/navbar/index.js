@@ -23,27 +23,57 @@ const Navbar = () => {
       <div className="placeholder">
         <ul className={`links ${show ? "slide" : ""}`}>
           <li>
-            <NavLink to={PATHS.HOME} activeclassname="active">
+            <NavLink
+              to={PATHS.HOME}
+              style={({ isActive }) => ({
+                color: isActive ? "#E1EBEE" : "",
+                background: isActive ? "#191970" : "",
+              })}
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to={PATHS.ABOUT} activeclassname="active">
+            <NavLink
+              to={PATHS.ABOUT}
+              style={({ isActive }) => ({
+                color: isActive ? "#E1EBEE" : "",
+                background: isActive ? "#191970" : "",
+              })}
+            >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink to={PATHS.SERVICES} activeclassname="active">
+            <NavLink
+              to={PATHS.SERVICES}
+              style={({ isActive }) => ({
+                color: isActive ? "#E1EBEE" : "",
+                background: isActive ? "#191970" : "",
+              })}
+            >
               Services
             </NavLink>
           </li>
           <li>
-            <NavLink to={PATHS.LATEST_NEWS} activeclassname="active">
+            <NavLink
+              to={PATHS.LATEST_NEWS}
+              style={({ isActive }) => ({
+                color: isActive ? "#E1EBEE" : "",
+                background: isActive ? "#191970" : "",
+              })}
+            >
               Latest News
             </NavLink>
           </li>
           <li>
-            <NavLink to={PATHS.CONTACT_US} activeclassname="active">
+            <NavLink
+              to={PATHS.CONTACT_US}
+              style={({ isActive }) => ({
+                color: isActive ? "#E1EBEE" : "",
+                background: isActive ? "#191970" : "",
+              })}
+            >
               Contact Us
             </NavLink>
           </li>

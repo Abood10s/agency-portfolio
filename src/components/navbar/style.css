@@ -62,10 +62,6 @@ a {
     padding: 0.5rem 0.7rem;
 }
 
-.links li a:hover {
-    color: #0F7AD3;
-}
-
 .black {
     color: #111;
 }
@@ -85,6 +81,11 @@ a {
 .nav-button:hover {
     background-color: #0F7AD3;
     color: #fff;
+}
+
+li,
+a {
+    background-color: transparent;
 }
 
 @media only screen and (max-width: 880px) {
