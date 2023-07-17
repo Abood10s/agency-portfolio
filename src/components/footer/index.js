@@ -1,13 +1,8 @@
 import React from "react";
 import "./style.css";
 
-import fb from "../../assets/fb.png";
-import is from "../../assets/is.png";
-import tw from "../../assets/tw.png";
-import i1 from "../../assets/i1.png";
-import i2 from "../../assets/i2.png";
-import i3 from "../../assets/i3.png";
 import PrimaryButton from "../primaryButton";
+import IMAGES from "../../mockData";
 
 const Footer = () => {
   return (
@@ -49,19 +44,19 @@ const Footer = () => {
           </div>
           <div>
             <div className="contact-widgett">
-              <img src={i1} alt="phone" />
+              <img src={IMAGES.i1} alt="phone" />
 
               <h5>Address:</h5>
               <p>28 Division St, New York</p>
             </div>
             <div className="contact-widgett">
-              <img src={i3} alt="phone" />
+              <img src={IMAGES.i3} alt="phone" />
 
               <h5>Email:</h5>
               <p>Startnext@Gmail.Com</p>
             </div>
             <div className="contact-widgett">
-              <img src={i2} alt="phone" />
+              <img src={IMAGES.i2} alt="phone" />
 
               <h5>Phone:</h5>
               <p>+ (321) 984 75413545</p>
@@ -74,9 +69,9 @@ const Footer = () => {
             <p className="footer-hidden">Privacy Policy</p>
           </div>
           <div className="footer-icons">
-            <img src={fb} alt="facebook" />
-            <img src={is} alt="instagram" />
-            <img src={tw} alt="twitter" />
+            <img src={IMAGES.fb} alt="facebook" />
+            <img src={IMAGES.is} alt="instagram" />
+            <img src={IMAGES.tw} alt="twitter" />
           </div>
         </div>
       </div>

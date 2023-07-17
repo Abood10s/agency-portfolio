@@ -1,9 +1,11 @@
-import HomePage from "../pages/home";
-import AboutPage from "../pages/about";
-import ServicesPage from "../pages/services";
-import LatestPage from "../pages/latestnews";
-import ContactPage from "../pages/contact";
-import SingleBlogPage from "../pages/singleBlog";
+import React from "react";
+
+const HomePage = React.lazy(() => import("../pages/home"));
+const AboutPage = React.lazy(() => import("../pages/about"));
+const ServicesPage = React.lazy(() => import("../pages/services"));
+const LatestPage = React.lazy(() => import("../pages/latestnews"));
+const ContactPage = React.lazy(() => import("../pages/contact"));
+const SingleBlogPage = React.lazy(() => import("../pages/singleBlog"));
 
 export const PATHS = {
   HOME: "/",

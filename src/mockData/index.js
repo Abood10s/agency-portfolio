@@ -28,6 +28,12 @@ const IMAGES = {
   latest2: require("../assets/latest2.png"),
   latest3: require("../assets/latest3.png"),
   latest4: require("../assets/latest4.png"),
+  fb: require("../assets/fb.png"),
+  is: require("../assets/is.png"),
+  tw: require("../assets/tw.png"),
+  i1: require("../assets/i1.png"),
+  i2: require("../assets/i2.png"),
+  i3: require("../assets/i3.png"),
 };
 export default IMAGES;
 
