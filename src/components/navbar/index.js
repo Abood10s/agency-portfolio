@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 
 import { PATHS } from "../../routes";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 import Logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const { pathname } = useLocation();
+  useEffect(() => {
+    setShow(false);
+  }, [pathname]);
   return (
     <nav className="navbar">
       <div className="logo">

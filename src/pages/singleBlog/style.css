@@ -1,0 +1,21 @@
+.main-img {
+    padding: 0 0.5rem;
+    margin: 2rem auto;
+    border-radius: var(--radius);
+    overflow: hidden;
+    width: 90%;
+}
+
+.main-img img {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    object-fit: fill;
+}
+
+.blog-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}

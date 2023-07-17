@@ -1,0 +1,10 @@
+.latest-grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(220px, 290px));
+    width: 90%;
+    overflow-x: auto;
+    justify-content: center;
+    padding: 0 1.5rem;
+    gap: 1rem;
+    margin: 1rem auto;
+}
