@@ -3,8 +3,9 @@ import "./style.css";
 
 const ContactWidget = ({ image, title, body }) => {
   return (
-    <div class="contact-widget">
-      <div class="column">
+    <div className="contact-widget">
+      <img src={image} alt="svg" className="svg-flex" />
+      <div className="column">
         <h5>{title}:</h5>
         <p>{body}</p>
       </div>

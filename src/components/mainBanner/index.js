@@ -3,12 +3,12 @@ import "./style.css";
 import IMAGES from "../../mockData";
 const Banner = ({ children }) => {
   return (
-    <div class="img-banner">
+    <div className="img-banner">
       {children}
       <img
         src={IMAGES.ballsImg}
         alt="background pic of balls"
-        class="balls-img"
+        className="balls-img"
       />
     </div>
   );

@@ -11,7 +11,7 @@ const ContactForm = () => {
   };
   return (
     <form>
-      <div class="inputs">
+      <div className="inputs">
         <input
           type="text"
           className={`input ${isFormSubmitted ? "submitted" : ""}`}
@@ -30,7 +30,7 @@ const ContactForm = () => {
           placeholder="Email"
           required
         />
-        <select name="departments" id="">
+        <select name="departments" id="select">
           <option value="">Select A Department</option>
           <option value="Education">Education</option>
           <option value="Health">Health</option>

@@ -1,7 +1,11 @@
 .contact-widget {
-    padding: 0.7rem;
+    padding: 1rem;
     display: flex;
     gap: 1rem;
     border-radius: var(--radius);
     box-shadow: 1px 1px 20px var(--shadow);
+}
+
+.svg-flex {
+    align-self: self-start;
 }

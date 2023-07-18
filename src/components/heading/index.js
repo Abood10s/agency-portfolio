@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 const Heading = ({ title, body }) => {
   return (
-    <div class="heading">
+    <div className="heading">
       <h2>{title}</h2>
       <p>{body}</p>
     </div>
