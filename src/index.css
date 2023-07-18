@@ -19,3 +19,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(17px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

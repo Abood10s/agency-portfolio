@@ -10,6 +10,7 @@
 .hero-img {
     display: block;
     max-height: 60vh;
+    animation: fadeIn 0.4s forwards;
 }
 
 .desc {
@@ -17,6 +18,7 @@
     flex-direction: column;
     gap: 1.5rem;
     width: 45%;
+    animation: fadeIn 0.4s forwards;
 }
 
 .get-started-btn:hover {
