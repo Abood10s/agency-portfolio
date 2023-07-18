@@ -57,7 +57,7 @@ const HomePage = () => {
         <PrimaryButton
           bg={"#4A3AFF"}
           clr={"#fff"}
-          classNameName="get-started-btn"
+          className="get-started-btn"
         />
       </HeroSection>
       <Heading

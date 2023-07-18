@@ -124,4 +124,8 @@
     .footer-hidden {
         display: none;
     }
+    .top-part {
+        flex-direction: column;
+        gap: 0rem;
+    }
 }

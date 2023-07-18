@@ -1,0 +1,45 @@
+.main-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+
+.main-title {
+    color: var(--dark-blue);
+    border-bottom: 2px solid var(--dark-blue);
+    width: fit-content;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.people-svg {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.main-body {
+    font-size: 24px;
+    font-weight: bold;
+    width: 70%;
+}
+
+@media only screen and (max-width: 880px) {
+    .main-flex {
+        flex-direction: column;
+    }
+    .main-body {
+        width: 90%;
+    }
+}

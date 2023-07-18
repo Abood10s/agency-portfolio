@@ -9,10 +9,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Suspense fallback={<Spinner />}>
-        {router}
-        <Footer />
-      </Suspense>
+      <Suspense fallback={<Spinner />}>{router}</Suspense>
+      <Footer />
     </div>
   );
 }

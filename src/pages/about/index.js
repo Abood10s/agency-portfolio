@@ -12,11 +12,13 @@ import "swiper/css/scrollbar";
 //  components
 import Banner from "../../components/mainBanner";
 import Heading from "../../components/heading";
-import HeroSection from "../../components/heroSection";
-import IMAGES, { customersData, teamData } from "../../mockData";
 import { breakpoints } from "../home";
 import CustomerCard from "../../components/customer-card";
 import ProjectsCard from "../../components/projects-card";
+import MainSection from "../../components/mainSection";
+
+//  images
+import IMAGES, { customersData, teamData } from "../../mockData";
 
 const AboutPage = () => {
   return (
@@ -27,7 +29,23 @@ const AboutPage = () => {
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         />
       </Banner>
-      <HeroSection image={IMAGES.aboutImage} reverse={true} />
+
+      <MainSection
+        title={"About The Company"}
+        image={IMAGES.aboutImage}
+        body={
+          <h2 className="width-title">
+            Secure <span className="red-txt">IT Solutions</span>for a more
+            secure environment
+          </h2>
+        }
+      >
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </MainSection>
       <Heading
         title="Our Awesome Team
 "

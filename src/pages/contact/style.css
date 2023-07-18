@@ -1,0 +1,16 @@
+.contact-widgets {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1170px) {
+    .contact-widgets {
+        grid-template-columns: 1fr;
+    }
+    /* textarea {
+        width: 90%;
+    } */
+}

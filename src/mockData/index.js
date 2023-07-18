@@ -34,6 +34,10 @@ const IMAGES = {
   i1: require("../assets/i1.png"),
   i2: require("../assets/i2.png"),
   i3: require("../assets/i3.png"),
+  contactImg: require("../assets/illustration.png"),
+  address: require("../assets/address.svg").default,
+  email: require("../assets/email.svg").default,
+  phone: require("../assets/phone.svg").default,
 };
 export default IMAGES;
 
