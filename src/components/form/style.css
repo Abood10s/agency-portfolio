@@ -19,13 +19,13 @@ textarea {
     border-radius: var(--radius);
     resize: vertical;
     display: block;
-    width: 97.5%;
     margin: auto;
+    width: 100%;
     box-shadow: 2px 4px 5px 0 #F6F6F6;
 }
 
 form {
-    width: 70%;
+    width: 75%;
     margin: 0 auto 1rem auto;
     padding: 1rem;
 }
@@ -34,7 +34,7 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .send-btn {

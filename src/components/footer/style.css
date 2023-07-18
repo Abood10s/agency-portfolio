@@ -127,5 +127,7 @@
     .top-part {
         flex-direction: column;
         gap: 0rem;
+        margin: 0.1rem auto;
+        text-align: center;
     }
 }
