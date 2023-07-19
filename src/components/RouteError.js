@@ -2,7 +2,7 @@ import React from "react";
 
 const RouteError = () => {
   return (
-    <h1
+    <div
       style={{
         textAlign: "center",
         height: "44.8vh",
@@ -10,9 +10,9 @@ const RouteError = () => {
         color: "red",
       }}
     >
-      Sorry..!{" "}
+      <h1>Sorry..! </h1>
       <h2 style={{ color: "#0F7AD3" }}>The page you requested doesn't exist</h2>
-    </h1>
+    </div>
   );
 };
 
