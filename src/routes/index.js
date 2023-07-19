@@ -1,4 +1,5 @@
 import React from "react";
+import RouteError from "../components/RouteError";
 
 const HomePage = React.lazy(() => import("../pages/home"));
 const AboutPage = React.lazy(() => import("../pages/about"));
@@ -23,5 +24,5 @@ export const router = [
   { path: PATHS.LATEST_NEWS, element: <LatestPage /> },
   { path: PATHS.CONTACT_US, element: <ContactPage /> },
   { path: PATHS.SINGLE_BLOG, element: <SingleBlogPage /> },
-  { path: "*", element: <h1>Sorry ..!</h1> },
+  { path: "*", element: <RouteError /> },
 ];
