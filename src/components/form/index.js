@@ -4,13 +4,24 @@ import { useState } from "react";
 
 const ContactForm = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
+  const timer = () => {
+    setTimeout(() => {
+      setIsFormSubmitted(false);
+    }, 3000);
+  };
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setIsFormSubmitted(true);
+    timer();
   };
+
   return (
     <form>
+      {isFormSubmitted && (
+        <div className={`toaster ${isFormSubmitted && "slide-toaster"}`}>
+          Sent Successfully <i className="fa-regular fa-circle-check"></i>
+        </div>
+      )}
       <div className="inputs">
         <input
           type="text"

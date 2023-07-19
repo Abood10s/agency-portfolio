@@ -70,6 +70,32 @@ select {
     box-shadow: 2px 4px 5px 0 #F6F6F6;
 }
 
+.toaster {
+    background-color: #90ee90;
+    position: fixed;
+    top: 11%;
+    right: -50%;
+    color: green;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.toaster i {
+    animation: iconScale linear 0.2s;
+    animation-iteration-count: 2;
+}
+
+.slide-toaster {
+    right: 2.1%;
+}
+
 @keyframes invalidInput {
     0% {
         transform: translateX(0);
@@ -85,6 +111,18 @@ select {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes iconScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
