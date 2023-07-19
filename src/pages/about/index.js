@@ -19,6 +19,7 @@ import MainSection from "../../components/mainSection";
 
 //  images
 import IMAGES, { customersData, teamData } from "../../mockData";
+import CompanyFacts from "../../components/company-facts";
 
 const AboutPage = () => {
   return (
@@ -29,7 +30,6 @@ const AboutPage = () => {
           body="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
         />
       </Banner>
-
       <MainSection
         title={"About The Company"}
         image={IMAGES.aboutImage}
@@ -89,6 +89,7 @@ const AboutPage = () => {
           ))}
         </Swiper>
       </div>
+      <CompanyFacts />
     </div>
   );
 };

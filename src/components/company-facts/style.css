@@ -1,0 +1,27 @@
+.widget-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.widget-card {
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: var(--radius);
+    border-bottom: 3px solid var(--dark-blue);
+}
+
+.widget-card:nth-child(2) {
+    border-bottom: 3px solid var(--light-green);
+}
+
+.company-facts {
+    background-color: var(--soft-blue);
+    width: 95%;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: var(--radius);
+}
