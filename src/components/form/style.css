@@ -73,7 +73,7 @@ select {
 .toaster {
     background-color: #90ee90;
     position: fixed;
-    top: 11%;
+    top: 5%;
     right: -50%;
     color: green;
     font-weight: bold;
@@ -84,6 +84,7 @@ select {
     padding: 0.5rem 2rem;
     border-radius: 8px;
     gap: 0.5rem;
+    z-index: 9889989;
     transition: all 0.3s ease;
 }
 
