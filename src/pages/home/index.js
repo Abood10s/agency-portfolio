@@ -60,12 +60,7 @@ const HomePage = () => {
       ) : null}
 
       <HeroSection image={IMAGES.heroImage}>
-        <button
-          bg={"#4A3AFF"}
-          clr={"#fff"}
-          className="get-started-btn"
-          onClick={() => setShowModal(true)}
-        >
+        <button className="get-started-btn" onClick={() => setShowModal(true)}>
           Get Started
         </button>
       </HeroSection>
