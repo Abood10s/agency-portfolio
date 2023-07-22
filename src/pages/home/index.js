@@ -20,7 +20,6 @@ import EduCard from "../../components/education-card";
 import CustomerCard from "../../components/customer-card";
 import ProjectsCard from "../../components/projects-card";
 import StrategyCard from "../../components/strategy-card";
-import PrimaryButton from "../../components/primaryButton";
 
 //  images And Mock Data
 import IMAGES, {
