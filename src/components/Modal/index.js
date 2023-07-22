@@ -10,12 +10,12 @@ const fadeOutModal = { animation: "fadeOutModal 0.2s forwards" };
 const Modal = ({ showModal, setShowModal }) => {
   return (
     <div
-      style={showModal ? fadeInModal : fadeOutModal}
       className="modal-container"
+      style={showModal ? fadeInModal : fadeOutModal}
     >
       <CompanyFacts />
-      <div className="overlay" onClick={() => setShowModal(false)}></div>
       <PrimaryButton setShowModal={setShowModal} title="Cancel" />
+      <div className="overlay" onClick={() => setShowModal(false)}></div>
     </div>
   );
 };
