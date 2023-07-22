@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 //  swiper
@@ -28,6 +28,7 @@ import IMAGES, {
   educationData,
   projectsData,
 } from "../../mockData";
+import Modal from "../../components/Modal";
 
 //  Swipers Break points
 export const breakpoints = {
@@ -51,14 +52,22 @@ export const breakpoints = {
 
 const HomePage = () => {
   const Accordions = Array.from({ length: 5 });
+  const [showModal, setShowModal] = useState(false);
   return (
     <div>
+      {showModal ? (
+        <Modal showModal={showModal} setShowModal={setShowModal} />
+      ) : null}
+
       <HeroSection image={IMAGES.heroImage}>
-        <PrimaryButton
+        <button
           bg={"#4A3AFF"}
           clr={"#fff"}
           className="get-started-btn"
-        />
+          onClick={() => setShowModal(true)}
+        >
+          Get Started
+        </button>
       </HeroSection>
       <Heading
         title={"Our services"}
