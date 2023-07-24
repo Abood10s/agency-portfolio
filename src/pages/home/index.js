@@ -55,7 +55,27 @@ const HomePage = () => {
   return (
     <div>
       {showModal ? (
-        <Modal showModal={showModal} setShowModal={setShowModal} />
+        <Modal showModal={showModal} setShowModal={setShowModal}>
+          <div className="widgets-wrapper">
+            <div className="widgets">
+              <Widget
+                number="1000+"
+                desc="Completed projects"
+                image={IMAGES.widgetimg1}
+              />
+              <Widget
+                number="50k+"
+                desc="Happy Customers"
+                image={IMAGES.widgetimg2}
+              />
+              <Widget
+                number="20+"
+                desc="awards won"
+                image={IMAGES.widgetimg3}
+              />
+            </div>
+          </div>
+        </Modal>
       ) : null}
 
       <HeroSection image={IMAGES.heroImage}>
@@ -69,7 +89,6 @@ const HomePage = () => {
           "The service we offer is specifically designed to meet your needs."
         }
       />
-
       <div className="services-cards">
         <ServicesCard image={IMAGES.firstImage} title={"Digital Marketing"} />
         <ServicesCard

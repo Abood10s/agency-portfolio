@@ -62,7 +62,7 @@ body {
 
 @keyframes fadeModal {
     from {
-        transform: scale(0.7);
+        transform: scale(0.4);
         opacity: 0;
     }
     to {
