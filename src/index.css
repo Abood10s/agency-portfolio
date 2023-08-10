@@ -55,6 +55,10 @@ body {
     }
 }
 
+.fade-acc {
+    animation: fadeModal 0.2s forwards;
+}
+
 .get-started-btn {
     background-color: #0F7AD3;
     color: var(--white);

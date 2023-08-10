@@ -10,7 +10,9 @@ import ProjectsCard from "../../components/projects-card";
 
 const SingleBlogPage = () => {
   let { id } = useParams();
+
   let item = latestData.find((item) => item.id === parseInt(id));
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, [id]);
